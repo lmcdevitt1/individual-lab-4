@@ -86,7 +86,6 @@
 
 
 </div>
-=======
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
@@ -97,6 +96,5 @@
 </head>
 <body>
     @inertia
->>>>>>> 3eb1b9c6a94ba835c294b7ad6ec051c08dc8b22d
 </body>
 </html>
