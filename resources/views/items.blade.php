@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
 <html>
 <head>
     <title>Items</title>
-    <style>
+    <style>https://github.com/lmcdevitt1/individual-lab-4/edit/feature/resources/views/items.blade.php
         /* This places the tables side-by-side and gives them nice spacing */
         .menu-container {
             display: flex;
