@@ -3,20 +3,25 @@
 namespace App\Http\Controllers;
 
 use App\Models\Item;
-use Illuminate\Http\Request;
 
-class ItemController extends Controller 
+class ItemController extends Controller
 {
-	public function index() 
-		{
-			// Pulls all rows from your sqlite database table using Eloquent
-			$items = Item::all();
+    // Displays resources/views/items/index.blade.php
+    public function index()
+    {
+        // Pulls all rows from your SQLite database table using Eloquent
+        $appleItems = Item::where('manufacturer', 'Apple')->get();
+	$dellItems = Item::where('manufacturer', 'Dell')->get();
 
-			return view('items.index', ['items' => $items]);
-		}
-		public function welcome()
-			{
-				return view('welcome');
-			}
-		}
-	
+return view('items.index',[
+	'appleItems'=> $appleItems,
+	'dellItems'=>$dellItems
+]);
+}
+
+    // Displays the welcome page
+    public function welcome()
+    {
+        return view('welcome');
+    }
+}

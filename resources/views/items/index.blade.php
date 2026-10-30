@@ -95,7 +95,11 @@
                 </thead>
 
                 <tbody>
-                    @foreach ($items as $item)
+                    @php
+			$manufacturerItems = $manufacturer === 'Apple' ? $appleItems: $dellItems;
+		@endphp
+
+		@foreach ($manufacturerItems as $item)
                         <tr>
                             <td>{{ $item->manufacturer }}</td>
                             <td>{{ $item->name }}</td>
@@ -112,16 +116,4 @@
 
 </body>
 </html>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Items</title>
-</head>
-<body>
 
-
-@foreach ($items as $item)
-    <p>{{ $item->toString() }}</p>
-@endforeach
-</body>
-</html>
