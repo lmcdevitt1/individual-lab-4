@@ -9,7 +9,6 @@ class Item extends Model
     protected $fillable = [
 
         'manufacturer',
-        'name',
         'make',
         'model',
         'price',
@@ -19,8 +18,8 @@ class Item extends Model
 
     public function toString(): string
     {
-        return  "Manufacturer: {$this->manufacturer},
-         Name: {$this->name},
+        return  
+"Manufacturer: {$this->manufacturer},       
           Make: {$this->make},
            Model: {$this->model},
             Price: {$this->price},
