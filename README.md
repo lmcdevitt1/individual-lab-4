@@ -2,16 +2,16 @@ Context: This lab will help you create and manage a database schema using Larave
 
 Tasks:
 
-Local Setup:
-Build upon the existing setup you used in Lab 3
+# Local Setup:
+Build upon the existing setup you used in **Lab 3**
 Creating Models and Migrations:
-Create models using Artisan commands, including migrations and seeders.
+Create models using **Artisan commands**, including **migrations and seeders.**
 Define the necessary table columns in the migration files.
 Setting Up Relationships:
 Define appropriate relationships between models:
 Library Management System: Book belongs to Author, Book belongs to many Categories
 E-commerce Application: Product belongs to many Categories, Order has many Products
-Custom Application: Define relationships based on your chosen models.
+Custom Application: Define relationships based on your **chosen models** (LMS, E-Commerce App based on LLL)
 Seeding the Database:
 Populate the database with initial data using seeders.
 Verify the data using a database client.
@@ -21,9 +21,12 @@ Add a method in the controller to retrieve and display the data.
 Define a route to display the data.
 Acceptance Criteria:
 
-Project runs locally and environment is configured.
-Chosen models and migrations are created.
-Necessary table columns are defined.
-Relationships between models are set up.
-Database is populated with initial data and verified.
-View is created and displays data from t
+- Project runs locally and environment is configured.
+- Chosen models and migrations are created.
+- Necessary table columns are defined.
+- Relationships between models are set up.
+- Database is populated with initial data and verified.
+- View is created and displays data from the database.'
+- Controller method retrieves and displays data.
+- Route is definied and accessible.
+- **Video Walkthrough:** Demonstrating the creation of models, migrations, seeders, and the process of displaying dat in the view.
